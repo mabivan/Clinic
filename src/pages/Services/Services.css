@@ -1,0 +1,60 @@
+.services-page {
+  padding-top: 80px;
+}
+
+.services-content {
+  padding: 5rem 0;
+}
+
+.service-category {
+  margin-bottom: 4rem;
+}
+
+.category-title {
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.category-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-item {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-2px);
+}
+
+.service-item h3 {
+  color: #2c5aa0;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.service-learn-btn {
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.service-learn-btn:hover {
+  background: #1e3a8a;
+}
