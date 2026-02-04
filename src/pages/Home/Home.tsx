@@ -18,7 +18,9 @@ import {
   FaInstagram,
   FaLinkedin,
   FaChevronLeft,
-  FaChevronRight 
+  FaChevronRight,
+  FaArrowRight,
+  FaPlay
 } from 'react-icons/fa';
 
 const Home: React.FC = () => {
@@ -128,21 +130,32 @@ const Home: React.FC = () => {
 
   return (
     <div className="home-page">
-      {/* 1. Hero / Welcome Section */}
-      <section className="hero-section">
-        <div className="hero-background">
-          <div className="hero-overlay"></div>
-        </div>
-        <div className="container hero-container">
-          <div className="hero-content">
-            <div className="hero-text">
-              <h1>Empowering Metabolic <span className='hero-word'>Health</span> for Lifelong Wellness</h1>
-              <p className="hero-subtitle">Root-cause focused, integrative care for diabetes, obesity, and optimal vitality.</p>
-              <p className="hero-description">Take control of your health today</p>
-              <div className="hero-buttons">
-                <button className="btn btn-primary">Get Started</button>
-                <button className="btn btn-secondary">Book A Consultation</button>
-              </div>
+           <section className="home-hero-section">
+        <div className="hero-overlay" />
+        <div className="container hero-content">
+          <p className="hero-subtitle">COMPREHENSIVE DIABETES CARE</p>
+          <h1>Advanced Diabetes Management for Every Life Stage</h1>
+          <p>
+            Evidence-based treatment, education, and lifelong support for optimal
+            diabetes control.
+          </p>
+
+          <div className="hero-actions">
+            <button className="btn btn-primary">
+              Book Appointment <FaArrowRight />
+            </button>
+            <button className="btn btn-outline">
+              Consult Specialist <FaArrowRight />
+            </button>
+          </div>
+
+          <div className="hero-video">
+            <span className="play-circle">
+              <FaPlay />
+            </span>
+            <div>
+              <strong>Our Clinical Approach</strong>
+              <small>Watch success stories</small>
             </div>
           </div>
         </div>

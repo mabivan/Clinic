@@ -6,7 +6,6 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Services from "./pages/Services/Services";
 import Contact from "./pages/Contact/Contact";
-import PatientResources from "./pages/PatientResources/PatientResources";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -18,7 +17,7 @@ const App: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/resources" element={<PatientResources />} />
+    
       </Routes>
       <Footer />
     </Router>

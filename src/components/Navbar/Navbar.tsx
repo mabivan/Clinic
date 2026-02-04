@@ -64,15 +64,6 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link 
-              to="/resources" 
-              className={isActiveLink("/resources") ? "active" : ""}
-              onClick={closeMobileMenu}
-            >
-              Resources
-            </Link>
-          </li>
-          <li>
-            <Link 
               to="/contact" 
               className={isActiveLink("/contact") ? "active" : ""}
               onClick={closeMobileMenu}

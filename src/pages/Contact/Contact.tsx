@@ -1,67 +1,129 @@
-import React from 'react';
-import './Contact.css';
+import React from "react";
+import "./Contact.css";
+import MapSection from "../../components/Map"; // Assuming you have this component
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 
 const Contact: React.FC = () => {
   return (
     <div className="contact-page">
-      <div className="page-hero">
-        <h1>Contact Us</h1>
-        <p>Get in touch with our diabetes care specialists</p>
-      </div>
-      
-      <section className="contact-content">
-        <div className="container">
-          <div className="contact-grid">
-            <div className="contact-info">
-              <h2>Contact Information</h2>
-              
-              <div className="contact-item">
-                <h3>Phone</h3>
-                <p>Toll-free: 1-800-DIABETES</p>
-                <p>Local: 1-800-342-2387</p>
-              </div>
-              
-              <div className="contact-item">
-                <h3>Email</h3>
-                <p>info@diabetescare.com</p>
-                <p>support@diabetescare.com</p>
-              </div>
-              
-              <div className="contact-item">
-                <h3>Address</h3>
-                <p>123 Diabetes Care Center</p>
-                <p>Medical Plaza, Suite 400</p>
-                <p>Health City, HC 12345</p>
-              </div>
-              
-              <div className="emergency-contact">
-                <h3>Emergency Contact</h3>
-                <p className="emergency-number">1-800-EMERGENCY</p>
-                <p>Available 24/7 for urgent diabetes care</p>
-              </div>
-            </div>
-            
-            <div className="contact-form">
-              <h2>Send us a Message</h2>
-              <form>
-                <div className="form-group">
-                  <input type="text" placeholder="Your Name" required />
-                </div>
-                <div className="form-group">
-                  <input type="email" placeholder="Your Email" required />
-                </div>
-                <div className="form-group">
-                  <input type="tel" placeholder="Your Phone" />
-                </div>
-                <div className="form-group">
-                  <textarea placeholder="Your Message" rows={5} required></textarea>
-                </div>
-                <button type="submit" className="submit-btn">Send Message</button>
-              </form>
-            </div>
+      {/* HERO SECTION */}
+      <section className="contact-hero">
+        <div className="hero-overlay">
+          <div className="hero-content">
+            <h1>Contact us</h1>
+            <p>
+              Kassapay is ready to provide the right solution according to your needs
+            </p>
           </div>
         </div>
       </section>
+
+      {/* FLOATING CARD SECTION */}
+      <section className="contact-container">
+        <div className="contact-card">
+          
+          {/* LEFT SIDE: INFO */}
+          <div className="contact-info">
+            <h3>Get in touch</h3>
+            <p className="sub-text">
+              Sociosqu viverra lectus placerat sem efficitur molestie vehicula cubilia leo etiam nam.
+            </p>
+
+            <div className="info-list">
+              {/* Item 1 */}
+              <div className="info-item">
+                <div className="icon-circle">
+                  <MdLocationOn />
+                </div>
+                <div className="info-details">
+                  <h4>Head Office</h4>
+                  <p>Jalan Cempaka Wangi No 22<br/>Jakarta - Indonesia</p>
+                </div>
+              </div>
+
+              {/* Item 2 */}
+              <div className="info-item">
+                <div className="icon-circle">
+                  <MdEmail />
+                </div>
+                <div className="info-details">
+                  <h4>Email Us</h4>
+                  <p>support@yourdomain.tld<br/>hello@yourdomain.tld</p>
+                </div>
+              </div>
+
+              {/* Item 3 */}
+              <div className="info-item">
+                <div className="icon-circle">
+                  <MdPhone />
+                </div>
+                <div className="info-details">
+                  <h4>Call Us</h4>
+                  <p>Phone: +6221.2002.2012<br/>Fax: +6221.2002.2013</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="social-media">
+              <h5>Follow our social media</h5>
+              <div className="social-icons">
+                <a href="#"><FaFacebookF /></a>
+                <a href="#"><FaInstagram /></a>
+                <a href="#"><FaTwitter /></a>
+                <a href="#"><FaLinkedinIn /></a>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT SIDE: FORM */}
+          <div className="contact-form-wrapper">
+            <h3>Send us a message</h3>
+            
+            <form className="contact-form">
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Name</label>
+                  <input type="text" placeholder="Name" />
+                </div>
+                <div className="form-group">
+                  <label>Company</label>
+                  <input type="text" placeholder="Company" />
+                </div>
+              </div>
+
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Phone</label>
+                  <input type="tel" placeholder="Phone" />
+                </div>
+                <div className="form-group">
+                  <label>Email</label>
+                  <input type="email" placeholder="Email" />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label>Subject</label>
+                <input type="text" placeholder="Subject" />
+              </div>
+
+              <div className="form-group">
+                <label>Message</label>
+                <textarea placeholder="Message"></textarea>
+              </div>
+
+              <button type="submit" className="submit-btn">Send</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      {/* MAP SECTION */}
+      <div className="map-container">
+        <MapSection /> 
+      </div>
     </div>
   );
 };

@@ -16,9 +16,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
 }
 
 .tup-logo {
@@ -34,13 +34,10 @@
 .tup-logo-img {
   height: 73px;
   width: auto;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
   transition: all 0.3s ease;
 }
 
-.tup-logo:hover .tup-logo-img {
-  filter: drop-shadow(0 4px 8px rgba(37, 161, 226, 0.2));
-}
+
 
 .tup-nav-links {
   display: flex;
