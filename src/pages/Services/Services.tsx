@@ -1,72 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { 
-  FaUserMd, FaArrowRight, FaPlay, FaStethoscope, FaPills, FaHeartbeat,
-  FaEye, FaChild, FaBrain, FaQuestionCircle, FaPhoneAlt, FaCalendarAlt,
-  FaCheckCircle, FaQuoteLeft, FaStar, FaUserCircle, FaBriefcaseMedical,
-  FaUserInjured, FaHandsHelping, FaChevronLeft, FaChevronRight
-} from 'react-icons/fa';
+  FaArrowRight, FaPlay, FaStethoscope, 
+  FaQuestionCircle, FaPhoneAlt, FaCalendarAlt
+  } from 'react-icons/fa';
 import './Services.css';
 
 const Services: React.FC = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
-  const testimonials = [
-    {
-      id: 1,
-      name: "Dr. Sarah Kintu",
-      role: "Consultant Endocrinologist",
-      quote: "Working with Kawempe Diabetes Clinic was a complete game-changer for our diabetes care program. Their attention to clinical detail and innovative treatment approaches truly stand out.",
-      rating: 5,
-      affiliation: "Uganda Diabetes Association",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80",
-      years: "15y Exp."
-    },
-    {
-      id: 2,
-      name: "John Mugisha",
-      role: "Type 2 Diabetes Patient",
-      quote: "The comprehensive care at Kawempe Clinic transformed my health journey. Their personalized approach helped me achieve optimal blood sugar control for the first time in years.",
-      rating: 5,
-      affiliation: "Patient since 2021",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-      years: "8y Patient"
-    },
-    {
-      id: 3,
-      name: "Dr. Michael Ochieng",
-      role: "Medical Director",
-      quote: "Kawempe's clinical excellence and patient-centered philosophy set a new standard in diabetes management. Their systematic approach to complication prevention has significantly improved patient outcomes.",
-      rating: 5,
-      affiliation: "African Diabetes Federation",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80",
-      years: "20y Lead"
-    },
-    {
-      id: 4,
-      name: "Grace Nakato",
-      role: "Diabetes Caregiver",
-      quote: "As a caregiver, Kawempe's education programs and 24/7 support have been invaluable. Their team's compassion made managing complex cases much more manageable.",
-      rating: 5,
-      affiliation: "Family Support",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80",
-      years: "10y Care"
-    },
-    {
-      id: 5,
-      name: "David Omondi",
-      role: "Type 1 Diabetes Advocate",
-      quote: "The advanced technology integration at Kawempe, particularly their insulin pump management and continuous monitoring systems, has dramatically improved my quality of life.",
-      rating: 5,
-      affiliation: "Patient Advocate",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
-      years: "12y T1D"
-    }
-  ];
-
-  const nextTestimonial = () => setCurrentTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
-  const prevTestimonial = () => setCurrentTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
-  const goToTestimonial = (index: number) => setCurrentTestimonial(index);
-
   return (
     <div id="kawempe-services-wrapper">
       
