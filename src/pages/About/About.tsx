@@ -72,13 +72,6 @@ const About: React.FC = () => {
     }
   ];
 
-  const stats = [
-    { number: '10,000+', label: 'People Helped' },
-    { number: '50+', label: 'Community Programs' },
-    { number: '24/7', label: 'Support Available' },
-    { number: '98%', label: 'User Satisfaction' }
-  ];
-
   const values = [
     {
       title: 'Empathy & Compassion',
