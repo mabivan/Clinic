@@ -51,10 +51,10 @@ const About: React.FC = () => {
   const teamMembers = [
     {
       id: 1,
-      name: 'Dr. Sarah Johnson',
-      role: 'Endocrinologist & Medical Director',
-      bio: 'Board-certified endocrinologist with 15+ years of diabetes care experience. Specializes in Type 1 and Type 2 diabetes management.',
-      image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      name: 'Dr. Mark Kaddu',
+      role: 'Pharmacist & Founder',
+      bio: 'Board-certified pharmacist with diabetes care experience. Specializes in Type 1 and Type 2 diabetes management.',
+      image: '/mark.jpg'
     },
     {
       id: 2,
