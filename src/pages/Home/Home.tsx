@@ -20,7 +20,7 @@ import {
   FaChevronLeft,
   FaChevronRight,
   FaArrowRight,
-  FaPlay
+
 } from 'react-icons/fa';
 
 const Home: React.FC = () => {
@@ -131,10 +131,10 @@ const Home: React.FC = () => {
   return (
     <div className="home-page">
            <section className="home-hero-section">
-        <div className="hero-overlay" />
+    
         <div className="container hero-content">
           <p className="hero-subtitle">COMPREHENSIVE DIABETES CARE</p>
-          <h1>Advanced Diabetes Management for Every Life Stage</h1>
+          <h1>Advanced Diabetes <br /> Management <br /> for Every Life Stage</h1>
           <p>
             Evidence-based treatment, education, and lifelong support for optimal
             diabetes control.
@@ -142,21 +142,9 @@ const Home: React.FC = () => {
 
           <div className="hero-actions">
             <button className="btn btn-primary">
-              Book Appointment <FaArrowRight />
-            </button>
-            <button className="btn btn-outline">
               Consult Specialist <FaArrowRight />
             </button>
-          </div>
-
-          <div className="hero-video">
-            <span className="play-circle">
-              <FaPlay />
-            </span>
-            <div>
-              <strong>Our Clinical Approach</strong>
-              <small>Watch success stories</small>
-            </div>
+     
           </div>
         </div>
       </section>
@@ -175,9 +163,7 @@ const Home: React.FC = () => {
           <div className="feature-copy">
             <h3>Less Time in the Chair</h3>
             <p>
-              Justo non dolor lectus ac egestas dictum. Leo tempus nec amet
-              fringilla. Eu semper velit tristique semper. Laoreet mi lacus
-              nisi diam in.
+              Our team respects your time while ensuring you receive the attention and guidance you need for effective diabetes management.
             </p>
           </div>
         </div>
@@ -189,9 +175,7 @@ const Home: React.FC = () => {
           <div className="feature-copy">
             <h3>More Efficient</h3>
             <p>
-              Justo non dolor lectus ac egestas dictum. Leo tempus nec amet
-              fringilla. Eu semper velit tristique semper. Laoreet mi lacus
-              nisi diam in.
+              Our care is guided by evidence-based protocols and modern diagnostics, allowing us to identify concerns early and adjust treatment quickly.
             </p>
           </div>
         </div>
@@ -203,9 +187,7 @@ const Home: React.FC = () => {
           <div className="feature-copy">
             <h3>More Comfortable Experience</h3>
             <p>
-              Justo non dolor lectus ac egestas dictum. Leo tempus nec amet
-              fringilla. Eu semper velit tristique semper. Laoreet mi lacus
-              nisi diam in.
+              From a calm clinical environment to compassionate providers who listen, we prioritize your comfort at every step.
             </p>
           </div>
         </div>
@@ -216,7 +198,7 @@ const Home: React.FC = () => {
       <div className="image-frame">
         <div className="image-inner">
           <img
-            src="/about-us-clinic.jpg"
+            src="/about.jpg"
             alt="A modern clinic setting with compassionate healthcare professionals"
             className="clinic-img"
           />
@@ -363,7 +345,7 @@ const Home: React.FC = () => {
                           '/team-2.jpg',
                           '/team-3.jpg', 
                           '/team-4.jpg',
-                          '/about-us-clinic.jpg',
+                          '/about.jpg',
                           '/default-avatar.jpg'
                         ];
                         e.currentTarget.src = fallbacks[index] || '/default-avatar.jpg';

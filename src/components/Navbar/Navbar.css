@@ -58,7 +58,7 @@
 }
 
 .tup-nav-links a:hover {
-  color: #25a1e2;
+  color: #84c441;
 }
 
 .tup-nav-links a::after {
@@ -68,7 +68,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #25a1e2;
+  background: #84c441;
   transition: width 0.3s ease;
 }
 
@@ -78,17 +78,19 @@
 
 /* Active link styling */
 .tup-nav-links a.active {
-  color: #14b8a6;
+  color: #84c441;
+;
   font-weight: 700;
 }
 
 .tup-nav-links a.active::after {
   width: 100%;
-  background: #14b8a6;
+  background: #84c441;
+;
 }
 
 .tup-appointment-btn {
-  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+  background: #84c441;
   color: #ffffff;
   border: none;
   padding: 0.75rem 1.5rem;
